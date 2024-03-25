@@ -10,14 +10,14 @@ if (new Date() - user.pc < 21600000) return
 await m.reply(`👋 Hola ${username}¡!
  *${saludo}*
 
-*⚠️ Nota:* No Envié Spam Al Bot!
-⚡️ Escriba !menu Para Ver Los Comandos Que Dispongo!
+*⚠️ Nota:* Para evitar saturar elbot no envie demasiados comandos al bot
+⚡️ Escriba /menu Para Ver Los Servicios Que Dispongo!
 
 *🥀 Si Tienes Duda O Sugerencia Contacta A Mi Creador: 📍*
-💖 +57 301 2482597 🧸
+💖 +5215591478197 🧸
 
-*⚡️ Escribe !grupos Para Ver Los Grupos Oficiales Del Bot 🦊*
+*⚡️ BLACK- STORE  🦊*
 
-📍 ¿Quieres Apoyar En El Proyecto Del Bot Para Que Siempre Tenga Actualizaciones? Puedes Apoyarnos Con Una Estrellita🌟 Al Repositorio.`) 
+📍 Actualmente El Mejor Bot Con Los Precios Mas Bajos Del Mercado, Preferimos Calidad No Cantidad By CRXS`) 
 user.pc = new Date * 1
 }
