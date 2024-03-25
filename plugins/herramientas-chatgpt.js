@@ -19,11 +19,11 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  if (!text) throw `*📍 Escriba Una Peticion* ${usedPrefix + command} Codigos En Js Para Un Juego De Suerte`;
+  if (!text) throw `*📍 Escriba Una Peticion* ${usedPrefix + command} Hola`;
   try {
         conn.sendPresenceUpdate('composing', m.chat);
         //let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-        let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Diego, tu seras SakuraBot-MD.`;
+        let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Crxs, tu seras BLACK - STORE.`;
         async function getOpenAIChatCompletion(texto) {
         const openaiAPIKey = global.openai_key;
         let chgptdb = global.chatgpt.data.users[m.sender];
@@ -110,12 +110,12 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
         const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'es', autoCorrect: true});
         m.reply(`${akuariapiresult1.text}`.trim());
     } catch {
-        throw `*📍 Ocurrió Un Error*`;
+        throw `*📍 ERROR: No disponible acualmente*`;
      }}
     }}
    }}
   }}
  }}
 };
-handler.command = /^(chatgpt|ia|robot|openai2|chatgpt2|ia2|robot2|Lite|SakuraBot)$/i;
+handler.command = /^(chatgpt|ia|robot|openai2|chatgpt2|ia2|robot2|Lite)$/i;
 export default handler;
