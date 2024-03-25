@@ -1,0 +1,54 @@
+import fetch from 'node-fetch';
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+  try {
+  if (usedPrefix == 'a' || usedPrefix == 'A') return;
+
+  const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
+  const {money, joincount} = global.db.data.users[m.sender];
+
+ const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const rtotal = Object.entries(global.db.data.users).length || '0'
+        const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+  const {exp, limit, level, role} = global.db.data.users[m.sender];
+  const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
+  const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': saludo, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${saludo},;;;\nFN:${saludo},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
+    await conn.reply(m.chat, '*ꪹ͜𓂃͡𝑪𝑨𝑹𝑮𝑨𝑵𝑫𝑶 𝑬𝑳 𝑴𝑬𝑵𝑼 𝑫𝑬𝑳 𝑩𝑶𝑻...𓏲੭*',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋🏻 ¡𝐇𝐨𝐥𝐚!', body: '🦋 𝖫𝗂𝗇𝖽𝗈 𝖠𝗆𝖺𝗇𝖾𝖼𝖾𝗋 🧸', sourceUrl: global.channel, thumbnail: await (await fetch(pp)).buffer() }}})
+//m.react('📍');
+    await conn.sendMessage(m.chat, { react: { text: '🚀', key: m.key } })
+  let txt =`╭*۰꒷⏝꒷۰꒷.✦˖ ࣪ ִֶָ  ★ ˖ ࣪ ִֶָ ۰✦.꒷۰꒷⏝*
+
+*★ Información De Usuario ★*
+╭─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ --- 
+│╭─────────────────
+││🌩 *Nombre:* ${taguser}
+│╰─────────────────
+╰─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ ---
+
+╭✦⢄✩*⢄⢁ ☪︎︎︎̸⃘̸࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎۫۬🛠️⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ⡠*✩⡠✦╮
+│╭─────────────────
+││ 「𓂃͡Comandos 」
+│├━━━━━━━━━━━━━━━━╯
+││🛠️✎ /Informacion
+│┣➤_Conoce mas de nosotros_
+││🛠️✎ /Servicios
+│┣➤_Conoce las plataformas y precios_
+││🛠️✎ /Ofertas
+│┣➤_Conoce nuestras ofertas_
+││🛠️✎ /Creador
+│┣➤_Contacta al vendedor_
+││🛠️✎ /Extras
+│┣➤_Conoce mas servicios_
+││🛠️✎ /TyC
+│┣➤_Terminos y Condiciones_
+│╰───────────────── `;
+   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": 'BLACK - STORE', "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen6, "mediaUrl": global.gp1, "sourceUrl": global.gp1}}}, {quoted: fkon});
+ // m.react('🧩');
+  } catch {
+    conn.reply(m.chat, '🧸 *Ocurrió Un Error*', m);
+  }
+};
+handler.help = ['menu'];
+handler.tags = ['menu'];
+handler.command = /^(menu|Menu|comandos|Comandoshelp|Help)$/i;
+handler.register = true
+export default handler;
