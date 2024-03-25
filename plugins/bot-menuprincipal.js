@@ -42,11 +42,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *✦ Info NPM ✦* 
 ╭─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ --- 
 │╭─────────────────
-││🌸 *Nombre:* SakuraBotLite
+││🌸 *Nombre:* Crxs
 ││📇 *Description:* Bot - JavaScript
 ││🐢 *Versión:* ${vs}
 ││🌹 *Main:* index.js
-││🌦 *Creador:* あ ᴅɪᴇɢᴏ あ
+││🌦 *Creador:* あ Crxs あ
 │╰─────────────────
 ╰─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ ---
 
@@ -517,6 +517,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 };
 handler.help = ['menu'];
 handler.tags = ['menu'];
-handler.command = /^(menu|allmenu|menú|help|menucompleto)$/i;
+handler.command = /^(menusecreto|allmenusecreto|menúSecreto|helpSecreto|menucompletosecreto)$/i;
 handler.register = true
 export default handler;
