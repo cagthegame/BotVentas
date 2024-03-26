@@ -1,25 +1,26 @@
 const handler = async (m, {conn}) => {
   m.reply(global.terminos);
 };
-handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i;
+handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|TyC|TYC|tyc|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i;
 handler.command = new RegExp;
 export default handler;
 
 global.terminos = `𝑺𝑴𝑺 𝑫𝑬𝑳 𝑪𝑹𝑬𝑨𝑫𝑶𝑹✨
 
-⚠️𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀 𝐃𝐄𝐋 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 (𝐃𝐈𝐄𝐆𝐎)⚠️
+⚠️𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀 𝐃𝐄𝐋 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 (CRXS)⚠️
 
-𝑫𝒊𝒆𝒈𝒐 𝑵𝒐 𝑺𝒆 𝑯𝒂𝒄𝒆 𝑹𝒆𝒔𝒑𝒐𝒏𝒔𝒂𝒃𝒍𝒆 𝑫𝒆𝒍 𝑴𝒂𝒍 𝑼𝒔𝒐 𝑫𝒆𝒍 𝑩𝒐𝒕 𝑶 𝑺𝒖𝒃𝒃𝒐𝒕, 𝑪𝒂𝒅𝒂 𝑷𝒆𝒓𝒔𝒐𝒏𝒂 𝑼𝒔𝒂 𝑺𝒖 𝑩𝒐𝒕 𝑨 𝑺𝒖 𝑴𝒂𝒏𝒆𝒓𝒂. 𝑫𝒊𝒆𝒈𝒐 𝑵𝒐 𝑺𝒆 𝑯𝒂𝒄𝒆 𝑪𝒂𝒓𝒈𝒐 𝑫𝒆 𝑳𝒐 𝑸𝒖𝒆 𝑷𝒂𝒔𝒂𝒓𝒂 𝑨 𝑺𝒖 𝑪𝒖𝒆𝒏𝒕𝒂 𝑺𝒊 𝑼𝒔𝒂 𝑴𝒂𝒍 𝑬𝒍 𝑩𝒐𝒕.
-
-𝑬𝒍 𝑩𝒐𝒕 𝑬𝒔 𝑺𝒊𝒎𝒑𝒍𝒆 𝑷𝒆𝒓𝒐 𝑪𝒐𝒏 𝑪𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝑫𝒊𝒗𝒆𝒓𝒕𝒊𝒅𝒐𝒔, 𝑸𝒖𝒊𝒆𝒓𝒆𝒔 𝑽𝒆𝒓 𝑳𝒐𝒔 𝑪𝒐𝒎𝒂𝒏𝒅𝒐𝒔? 𝑬𝒔𝒄𝒓𝒊𝒃𝒆 #menu.
-
-𝑩𝒐𝒕 𝑼𝒔𝒐 𝑷𝒖𝒃𝒍𝒊𝒄𝒐 𝑷𝒂𝒓𝒂 𝑻𝒐𝒅𝒂𝒔 𝑳𝒂𝒔 𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝑸𝒖𝒆 𝑷𝒖𝒆𝒅𝒂𝒏 𝑼𝒔𝒂𝒓𝒍𝒐, 𝑮𝒓𝒂𝒄𝒊𝒂𝒔 𝑷𝒐𝒓 𝑷𝒓𝒆𝒇𝒆𝒓𝒊𝒓𝒏𝒐𝒔 𝑼𝒔𝒂 𝑵𝒖𝒆𝒔𝒕𝒓𝒐 𝑩𝒐𝒕, 𝑬𝒍 𝑩𝒐𝒕 𝑬𝒔 𝑺𝒊𝒎𝒑𝒍𝒆 𝑷𝒆𝒓𝒐 𝑫𝒊𝒗𝒆𝒓𝒕𝒊𝒅𝒐✨
+1. Al realizar un pedido en nuestro Bot, acepta automáticamente todos los términos de servicio que se enumeran a continuación siempre que los lea o no.
+2. Nos reservamos el derecho de cambiar estos Términos de servicio sin previo aviso. Se espera que lea todos los términos de servicio antes de realizar cada pedido para asegurarse de estar actualizado con cualquier cambio o cambios futuros.
+3. Solo utilizará nuestro Bot de manera que cumpla con todos los acuerdos celebrados con todos los servicios de redes sociales en su página de Términos de servicio individuales.
+4. Nuestras tarifas están sujetas a cambios en cualquier momento sin previo aviso. Los términos permanecen vigentes en el caso de cambios de tarifas.
+5. No garantizamos un tiempo de entrega para ningún servicio. Ofrecemos nuestra mejor estimación de cuándo se entregará el pedido. Se estima que todos los pedidos se entregarán dentro de 0 a 48 horas. Después de 48 horas, podemos cancelar su pedido.
+6. Nos esforzamos por ofrecer exactamente lo que nuestros revendedores esperan de nosotros. En este caso, nos reservamos el derecho de cambiar un tipo de servicio si lo creemos necesario para completar un pedido.
 
 𝑪𝒐𝒏𝒕𝒂𝒄𝒕𝒂𝒏𝒐𝒔🚀
 
-✫ Wa.me/573013482814
-᯽ diegojadibot
+✫ Wa.me/5215591478197
+᯽ CrxsMods
 ✫ Correo electronico: 
-argumedodie@gmail.com
+crxsofcfdh3@gmail.com
 
-𝕾𝖆𝖐𝖚𝖗𝖆-𝕭𝖔𝖙-𝕷𝖎𝖙𝖊-𝕸𝕯🌻`;
+B L A C K  -  S T O R E🌻`;
