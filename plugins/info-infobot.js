@@ -37,7 +37,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 │
 │•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•
 │
-│➸ 𝙎𝙖𝙠𝙪𝙧𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿🧸📍
+│➸ BLACK - STORE🧸📍
 ╰━━━━━━･❪ ❁ ❫ ･━━━━━━❖`.trim();
   const doc = [
     "pdf",
@@ -48,22 +48,22 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/diegojadibot/SakuraBotLite-MD` },
+    document: { url: `https://www.facebook.com/profile.php?id=61557986960186` },
     mimetype: `application/${document}`,
-    fileName: `Sakura Bot Lite 🌸`,
+    fileName: `C R X S`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/diegojadibot/SakuraBotLite-MD",
+        mediaUrl: "https://github.com/cagthegame",
         mediaType: 2,
         previewType: "pdf",
         title: "Tᴜ Mᴇᴊᴏʀ Bᴏᴛ!",
         body: wm,
         thumbnail: imagen6,
-        sourceUrl: "https://atom.bio/sakuralite",
+        sourceUrl: "https://www.facebook.com/profile.php?id=61557986960186",
       },
     },
     caption: info,
