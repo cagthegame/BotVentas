@@ -25,40 +25,40 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 
 const document = doc[Math.floor(Math.random() * doc.length)];
- const str = `╭✨️⸽⃕𝕾𝖆𝖐𝖚𝖗𝖆-𝕭𝖔𝖙-𝕷𝖎𝖙𝖊-𝕸𝕯🍁⃨፝⃕✰*
-┃➸ 𝕾𝖆𝖐𝖚𝖗𝖆-𝕭𝖔𝖙-𝕷𝖎𝖙𝖊-𝕸𝕯🧸
-┃➸ 📍𝖢𝗈𝗅𝖺𝖻𝗈𝗋𝖺𝖽𝗈𝗋𝖾𝗌
+ const str = `╭✨️B L A C K - S T O R E*
+┃➸ 📍 INFORMACION
 ╰◆━━━━━━◆❃◆━━━━━━◆
 
-*╭🧸⸽⃕𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼𝘀 𝗚𝗶𝘁𝗵𝘂𝗯📍✰*
-┃✣➸ 𝖣𝗂𝖾𝗀𝗈:
-┃ https://github.com/diegojadibot
+*╭🧸BLACK - STORE📍✰*
+┃✣➸ :QUIENES SOMOS
+┃ Es una pequeña empresa para hacer crecer 
+┃ tu perfil o canal de una manera eficaz
+┃ sin riego de perder tu cuenta o quedar bloqueada
 ┃
-┃✣➸ 𝖣𝖺𝗇𝗂𝖾𝗅:
-┃https://github.com/MoonContentCreator
-┃
-┃✣➸ 𝖠𝗓𝖺𝗆𝗂:
-┃ https://github.com/AzamiJs
-┃
-┃✣➸ 𝖬𝖺𝗋𝗂𝗈:
-┃ https://github.com/elrebelde21
-┃
-╰◆━━━━━━◆❃◆━━━━━━◆
-
-╭🧸⸽⃕𝗡𝘂𝗺𝗲𝗿𝗼𝘀 - 𝗖𝗿𝗲𝗮𝗱𝗼𝗿𝗲𝘀📍✰ 
-┋➸ 𝖣𝗂𝖾𝗀𝗈: 
-┋@573013482814
-┋
-┋➸ 𝖣𝖺𝗇𝗂𝖾𝗅:
-┋@33760536110
-┋
-┋➸ 𝖠𝗓𝖺𝗆𝗂: 
-┋@5217294888993
-┋
-┋➸ 𝖬𝖺𝗋𝗂𝗈: 
-┋@5492266613038
-┋
-╰◈ ━━━━━━━ ⸙ ━━━━━━━`.trim();     if (m.isGroup) { 
+┃✣➸ :MOTIVO DE VENDER
+┃ Nosotros decidimos vender nuestro propio
+┃ contenido para apoyarte a crecer ya sea por fama
+┃ poder ser creador de contenido o monetizar
+┃ sabemos que es dificil suvir por eso te apoyamos
+┃ 
+┃✣➸ CALIDAD:
+┃ Nosotros manejamos calidad de seguidores, comentarios
+┃ vistas y likes, todos nuestros perfiles son
+┃ de personas reales, Se acabo eso de tener puros
+┃ bots con nombres extraños en tu cuenta
+┃ 
+┃✣➸ PRECIOS:
+┃ Actualmente somo y seremos los UNICOS en tener
+┃ unos precios muy bajos con la calidad de 
+┃ servicios que damos
+┃ 
+┃✣➸ TIEMPO:
+┃ Con nosotros nunca te arrepentiras de 
+┃ tu compra ya que nuestros servicios son
+┃ permanenetes en tu cuenta siempre
+┃ asegurando un crecimiento sostenido. Te
+┃ olvidaras de las caidas de seguidores.
+╰◆━━━━━━◆❃◆━━━━━━◆`.trim();     if (m.isGroup) { 
  // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
@@ -71,7 +71,7 @@ const document = doc[Math.floor(Math.random() * doc.length)];
     conn.reply(m.chat, '*😻 𝘓𝘰𝘴𝘪𝘦𝘯𝘵𝘰, 𝘌𝘳𝘳𝘰𝘳, 𝘕𝘰 𝘗𝘶𝘦𝘥𝘰 𝘌𝘯𝘷𝘪𝘢𝘳 𝘌𝘭 𝘔𝘦𝘯𝘴𝘢𝘫𝘦!*', m);
   }
 };
-handler.command = /^(colaboradores|Colaboradores)$/i;
+handler.command = /^(Informacion|informacion|Información|información|Informasion|informacion|INFORMACION)$/i;
 handler.register = true
 handler.exp = 50;
 handler.fail = null;
